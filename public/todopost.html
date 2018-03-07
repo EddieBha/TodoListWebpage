@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>POST</title>
+    <link rel="stylesheet" type="text/css" href="css/layoutstyle.css">
+    <link rel="stylesheet" type="text/css" href="css/unsemantic-grid-responsive-tablet.css">
+</head>
+<body>
+<div id="content"></div>
+<form id="todoform" method="POST">
+    <section class="grid-100 tablet-grid-100 mobile-grid-100 grid-parent">
+
+
+
+        <p>
+        <h2>
+        <label>Title:</label> <br />
+        <input type="text" id="todoTitle" name="todoTitle" />
+    </h2>
+    </p>
+        <p>
+            <select id="todoCategoryId" name="todoCategoryId">
+
+            </select>
+        </p>
+
+    <p>
+        <h2>
+        <label>Content:</label> <br />
+        <textarea id="todoContent" name="todoContent" rows="5" cols="40"></textarea>
+    </h2>
+    </p>
+
+    <p>
+        <input type="submit" value="Submit" />
+    </p>
+    </section>
+</form>
+<a href="http://127.0.0.1:8000/todoget.html"><button id="btn" class="button">List</button></a>
+<button id="logout_btn" class="button">Logout</button>
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/common.js"></script>
+<script src="js/todopost.js"></script>
+<script src="js/categoryonly.js"></script>
+</body>
+</html>
